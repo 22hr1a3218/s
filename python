@@ -1,0 +1,248 @@
+...
+li=[10,20,30,40,50]
+for i in range(0,6,2):
+    print(li[i])
+print('\n')
+li=[1,2,3,4,5]
+for i in range(5,0,-2):
+    print(i)
+print('\n')
+li=[21,12,43,64,15,33,96]
+for i in range(0,len(li)-2,1):
+    print(li[i])
+print('\n')
+li=[21,12,43,64,15,33,96]
+for i in li:
+    if(i%2==0):
+        print(i,"even")
+    else:
+        print(i,"odd")
+print('\n')
+li=[21,12,43,64,15,33,96]
+sum=0
+for i in li:
+    sum=sum+i
+    print(sum)
+print('\n')
+li=[21,12,43,64,15,33,96]
+sum_odd=0
+sum_even=0
+for i in range(len(li)):
+    if i % 2==0:
+        sum_even=sum_even+li[i]
+    else:
+        sum_odd=sum_odd+li[i]
+print(sum_even)
+print(sum_odd)
+print('\n')
+li=[21,12,43,64,15,33,96]
+biggest=li[0]
+for i in li:
+    if i>biggest:
+        biggest=i
+print(biggest)
+print('\n')
+li=[21,12,43,64,15,33,96]
+a=li[0]
+for i in li:
+    if(i<a):
+        a=i
+print(a)
+print('\n')
+st=input()
+spacecount=0
+for i in st:
+    if i==' ':
+        spacecount=spacecount+1
+print(spacecount)
+print('\n')
+di={
+     'x':10,
+     'y':20
+}
+for i in di:
+    print(di[i])
+print('\n')
+di={ }
+housenumber=int(input('enter house number'))
+street=input('enter street name')
+city=input('enter the city name')
+state=input('enter the state name')
+pincode=int(input('enter the pincode'))
+di('housenumber':housenumber,'street':street,'city':city,'state':state,'pincode':pincode)
+print(di)
+for x in di
+       print(di[x])
+x=int(input())
+y=int(input())
+x,y=y,x
+print('value of x&y ,after swapping are:',x,y)
+print('\n')
+num=int(input(''))
+print('fibonacci seres:')
+num1=0
+num2=1
+count=2
+print(num1,end=' ')
+print(num2,end=' ')
+while count<num:
+    result=num1+num2
+    num1=num2
+    print(result,end=' ')
+    num1=num2
+    num2=result
+    count=count+1
+print('\n')
+name='shyam'
+str=' '
+for i in name:
+    str=i+str
+print('reverse string',str)
+print('\n')
+def function(x,y,z):
+    print('x=',x)
+    print('y=',y)
+    print('z=',z)
+function(10,20,30,)
+def function(x,*y,z=100):
+    print(x)
+    print(y)
+    print(z)
+function(10,20,30,40,60)
+function(10,20,30,40)
+function(10,20 ,z=100)
+name=input()
+bloodgroup=input()
+disease=input()
+email=input()
+def hospital(name,bloodgroup,*disease,email_ids='hospital@gmail.com'):
+    print(name)
+    print(bloodgroup)
+    print(disease)
+    print(email_ids)
+hospital(name,bloodgroup,disease,email,email_ids=email)
+x=[10,20,30,40,50]
+y=[]
+for i in x:
+    i+5
+    y.append(i+5)
+print(y)
+print('\n')
+f.open('acd.txt','w')
+f.write('welcome to python programming\n')
+f.write('python session\n')
+f.write('this is the content\n')
+f.write('shyam\n')
+f.close()
+def f1(fun,x):
+    print('welcome')
+    fun(x)
+    print('bye')
+def f2(x):
+    print(x*2)
+f1(f2,10)
+def f1(fun):
+    result = fun(10)
+    print(result)
+def f2(x):
+    return x*2
+f1(f2)
+print('\n')
+def f1(fun):
+    result = fun(10)
+    print(result)
+f2=lambda x:x*2
+f1(f2)
+print('\n')
+def f1(fun):
+    result = fun(10)
+    print(result)
+f1(lambda x:x*2)
+print('\n')
+x=[10,11,12,13,14,15]
+for i in x:
+    if i%2==0:
+        print(i)
+print('\n')
+x=[10,12,9,8,19]
+for i in x:
+    if i%2==0:
+        print(i)
+y=list(filter(lambda i:(i%2==0),x))
+print(y)
+print('\n')
+def decorators_fun(fun):
+    def wrapper_fun():
+        print('this is added before original code')
+        fun()
+        print('this is added after original code')
+    return wrapper_fun()
+@decorators_fun
+def fun():
+    print('this is original code')
+def hi(myname):
+    def hello():
+        print('***************************')
+        myname()
+        print('***************************')
+    return hello()
+@hi
+def myname():
+    print('my name is G.SHYAM')
+print('\n')
+import re
+x='mother theresa institute'
+y=re.split(' ',x)
+print(len(y))
+print('\n')
+import re
+x=input('enter the string')
+y=re.split(' ',x)
+print(len(y))
+print('\n')
+print(len(y)-1)
+print(y[::-1])
+print(' '.join(y))
+x=['palle','python','ml','datascience']
+print(' '.join(x))
+print('\n')
+import re
+x='palle bangalore india palye abc'
+y=re.findall('palle',x)
+print(y)
+print('\n')
+import re
+phone='123456789'
+y=re.findall('/d',phone)
+if len(phone)!=len(y):
+    print('not valid phone number')
+else:
+    print('valid phone number')
+print('\n')
+from abc import ABC,abstractmethod
+class A(ABC):
+    @abstractmethod
+    def f1(selfself):
+        pass
+class B(A):
+    def f1(selfself):
+        print('class B f1 method')
+b1=B()
+b1.f1()
+print('\n')
+import numpy as np
+a=np.array([[1,2,3]])
+b=np.array([[3],[2],[1]])
+print(a*b)
+print(np.matmul(a,b))
+print('\n')
+import numpy as np
+arr1=np.array([[1,2,3],[4,5,6]])
+res2=np.reshape(arr1,[3,2])
+print(res2)
+print('\n')
+import pandas as pd
+data=[10,20,30,40,50]
+series=pd.Series(data,index=['A','B','C','D','E'])
+print(series)
+print('\n')
